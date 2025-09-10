@@ -1,0 +1,39 @@
+import React, {useState} from "react"
+function Demo() {
+    const [inputUsername, setInputUsername] = useState('')
+
+    const[inputSenha, setInputSenha] = useState('')
+
+
+    function fazerLogin() {
+        alert("Nome: "+ inputUsername + " Senha: " + inputSenha)
+    }
+
+
+
+
+    return (
+        <div className="demo-container">
+            <h2>Demo</h2>
+            <label htmlFor="">username: </label>
+            <input type="text"
+                value={inputUsername}
+                onChange={(e) => setInputUsername(e.target.value )}
+            />
+        
+            <label htmlFor="senha"> Senha: </label>
+            <input type="password"
+            value={inputSenha}
+            onChange={(e) => setInputSenha(e.target.value)}
+            
+            />
+
+
+            <button onClick={fazerLogin}>Login</button>
+
+                                                                                                               
+        </div>
+    )
+}
+
+export default Demo
