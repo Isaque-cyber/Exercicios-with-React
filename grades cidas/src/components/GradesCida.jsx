@@ -14,7 +14,7 @@ function GradesCida() {
    
     return (
         <div className='gradescida-container'>
-
+                                
             <h2>Grradescida</h2>
 
             <label htmlFor=''>Altura</label>
